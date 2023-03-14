@@ -1,0 +1,19 @@
+{
+  "name": "app-microservice-auth-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "build": "echo \"Build\"",
+    "start": "echo \"Start\"",
+    "lint": "echo \"Lint\"",
+    "test": "echo \"Test\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.14.2",
+    "typescript": "^4.9.5"
+  }
+}
