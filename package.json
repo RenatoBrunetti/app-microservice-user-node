@@ -6,14 +6,18 @@
   "scripts": {
     "build": "echo \"Build\"",
     "start": "echo \"Start\"",
-    "lint": "echo \"Lint\"",
+    "lint": "eslint --fix",
     "test": "echo \"Test\""
   },
   "keywords": [],
-  "author": "",
+  "author": "Renato Brunetti",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^18.14.2",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.36.0",
+    "git-commit-msg-linter": "^4.9.2",
     "typescript": "^4.9.5"
   }
 }
