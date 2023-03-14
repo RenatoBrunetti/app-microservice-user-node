@@ -1,16 +1,12 @@
 export default {
 	roots: ['<rootDir>/src'],
 	collectCoverageFrom: [
-		'<rootDir>/src/**/*.ts'
+		'<rootDir>/src/**/*.ts',
+		'!<rootDir>/src/main/config/env.ts'
 	],
 	coverageDirectory: 'coverage',
 	testEnvironment: 'node',
 	transform: {
-		'.+\\.ts$': 'ts-jest'
-	},
-	globals: {
-		'ts-jest': {
-			useESM: true
-		}
+		'.+\\.ts$': ['ts-jest', { useESM: true }]
 	}
 };
