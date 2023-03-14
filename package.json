@@ -1,5 +1,5 @@
 {
-  "name": "app-microservice-auth-node",
+  "name": "app-microservice-user-node",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
@@ -7,17 +7,26 @@
     "build": "echo \"Build\"",
     "start": "echo \"Start\"",
     "lint": "eslint --fix",
-    "test": "echo \"Test\""
+    "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
+    "test:verbose": "jest --passWithNoTests --runInBand",
+    "test:staged": "npm test -- --findRelatedTests",
+    "test:ci": "npm test -- --coverage"
   },
   "keywords": [],
   "author": "Renato Brunetti",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^29.4.1",
     "@types/node": "^18.14.2",
+    "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^5.55.0",
     "@typescript-eslint/parser": "^5.55.0",
     "eslint": "^8.36.0",
     "git-commit-msg-linter": "^4.9.2",
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
   }
 }
